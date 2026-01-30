@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "健康运动助手",
+    "slug": "fitness-health-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#4CAF50"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.shanhou.fitnesshealthapp",
+      "infoPlist": {
+        "NSMotionUsageDescription": "需要访问运动传感器来检测您的运动状态",
+        "NSHealthShareUsageDescription": "需要访问健康数据来提供个性化建议"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#4CAF50"
+      },
+      "package": "com.shanhou.fitnesshealthapp",
+      "permissions": [
+        "android.permission.ACTIVITY_RECOGNITION",
+        "android.permission.BODY_SENSORS"
+      ]
+    },
+    "plugins": [
+      "expo-notifications",
+      "expo-sensors"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id"
+      }
+    }
+  }
+}
